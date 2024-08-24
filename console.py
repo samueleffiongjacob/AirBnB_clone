@@ -54,6 +54,11 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(saved_obj)
 
+    def help_show(self):
+        """ Help information for the show command """
+        print("Shows an individual instance of a class")
+        print("[Usage]: show <className> <objectId>\n")        
+
     def do_destroy(self, line):
         """deletes an instance based on the class name and id and saves the
         change into the JSON file

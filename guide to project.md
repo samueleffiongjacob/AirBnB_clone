@@ -15,5 +15,15 @@ $ python3 -m unittest discover tests
 
 #Unit tests non-interactive mode:
 $ echo "python3 -m unittest discover tests" | bash
-$ 
+$  cat file.json ; echo ""
+$ ./test_save_reload_base_model.py
+$ show BaseModel
+$ create BaseModel
+$ all BaseModel
+$ destroy
+$ User.all()
+$ User.count()
+$ User.show( " " )
+$ User.destroy ( " ")
+$  User.update(" ")
 ```
